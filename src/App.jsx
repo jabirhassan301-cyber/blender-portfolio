@@ -5,7 +5,6 @@ import Models from './components/Models'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Lightbox from './components/Lightbox'
-
 export default function App() {
   return (
     <div className="bg-gray-950 text-white font-sans">
@@ -18,4 +17,17 @@ export default function App() {
       <Footer />
     </div>
   )
+}
+import ModelViewer from './components/ModelViewer';
+
+function App() {
+  return (
+    <div className="App">
+      {/* Other components */}
+      <section id="viewer" className="py-10">
+        <h2 className="text-2xl font-bold text-center mb-4">3D Model Viewer</h2>
+        <ModelViewer />
+      </section>
+    </div>
+  );
 }
